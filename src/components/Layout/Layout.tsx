@@ -41,6 +41,7 @@ function Layout() {
     const target = e.target as Element;
     const id: string = target.id;
 
+    // NEED TO WORK WITH TYPES
     const clickedObject = cards.find(function(card: { id: string, value: number, isShown: boolean }) {
       return card.id === id;
     });
